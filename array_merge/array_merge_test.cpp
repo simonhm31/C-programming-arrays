@@ -41,7 +41,6 @@ TEST(ArrayMerge, Handle_one_longer_list) {
   int* a[] = { a0 };
   int expected[] = { 7, 0, 2, 3, 5, 6, 8, 9 };
   int* result;
-
   result = array_merge(num_arrays, sizes, a);
   arrays_match(8, result, expected);
   free(result);
